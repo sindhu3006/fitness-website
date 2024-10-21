@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    title Fitness Tracker
+    link(rel="stylesheet" href="/css/styles.css")
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+  body
+    header
+      h1 Fitness Tracker
+      nav
+        ul
+          li: a(href="/profile") Profile
+          li: a(href="/login") Login
+          li: a(href="/register") Register
+          li: a(href="/dashboard") Dashboard
+
+    main
+      block content
+
+    footer
+      p &copy; 2024 Fitness Tracker | Your health, your journey

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  section.profile
+    h2 User Profile
+    form(method="POST" action="/profile/update")
+      label(for="username") Username:
+      input(type="text" id="username" name="username" required)
+      label(for="email") Email:
+      input(type="email" id="email" name="email" required)
+      label(for="weight") Weight (kg):
+      input(type="number" id="weight" name="weight" required)
+      label(for="height") Height (cm):
+      input(type="number" id="height" name="height" required)
+      button(type="submit") Update Profile
